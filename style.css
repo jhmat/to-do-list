@@ -25,7 +25,6 @@ label {
 input {
   height: 2rem;
   font-size: 1rem;
-  margin-bottom: 10px;
   margin-right: 5px;
   border: 1px solid #e3e3e3;
   border-radius: 2px;
@@ -48,6 +47,14 @@ input {
   border-bottom: solid 1px #e3e3e3;
 }
 
+#addForm,
+#editForm,
+.ferramentas {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: solid 1px #e3e3e3;
+}
+
 .ferramentas {
   display: flex;
   justify-content: space-between;
@@ -63,7 +70,6 @@ input {
 
 .listaTarefas {
   display: grid;
-  margin-top: 20px;
 }
 
 .tarefa {
