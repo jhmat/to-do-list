@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <title>To-Do List</title>
   </head>
   <body>
@@ -32,21 +38,24 @@
           />
           <button id="limpaPesquisa">*</button>
         </form>
-
-        <label for="filtroTarefa">Filtrar:</label>
-        <select name="filtroTarefa" id="filtroTarefa">
-          <option value="todos">Todas</option>
-          <option value="concluidas">Concluídas</option>
-          <option value="pendentes">Pendentes</option>
-        </select>
+        <div>
+          <label for="filtroTarefa">Filtrar:</label>
+          <select name="filtroTarefa" id="filtroTarefa">
+            <option value="todos">Todas</option>
+            <option value="concluidas">Concluídas</option>
+            <option value="pendentes">Pendentes</option>
+          </select>
+        </div>
       </div>
 
       <div class="listaTarefas">
         <div class="tarefa">
           <h4 class="tarefaTexto">Limpar o quarto</h4>
-          <button class="check-btn">v</button>
-          <button class="edit2-btn">/</button>
-          <button class="delete-btn">x</button>
+          <div>
+            <button class="check-btn">v</button>
+            <button class="edit2-btn">/</button>
+            <button class="delete-btn">x</button>
+          </div>
         </div>
       </div>
     </div>
