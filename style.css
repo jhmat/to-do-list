@@ -18,7 +18,7 @@ body {
 label {
   display: block;
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
@@ -28,6 +28,12 @@ input {
   margin-right: 5px;
   border: 1px solid #e3e3e3;
   border-radius: 2px;
+}
+
+button {
+  font-size: 1rem;
+  height: 32px;
+  width: 35px;
 }
 
 .container {
@@ -55,6 +61,14 @@ input {
   border-bottom: solid 1px #e3e3e3;
 }
 
+#editForm {
+  display: none;
+}
+
+#editForm.ativo {
+  display: block;
+}
+
 .ferramentas {
   display: flex;
   justify-content: space-between;
@@ -70,6 +84,8 @@ input {
 
 .listaTarefas {
   display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 .tarefa {
@@ -78,8 +94,11 @@ input {
   justify-content: space-between;
 }
 
-button {
-  font-size: 1rem;
-  height: 32px;
-  width: 35px;
+.tarefaTexto {
+  font-weight: 400;
+}
+
+.acoes {
+  display: flex;
+  gap: 8px;
 }

@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,13 +26,17 @@
       <form action="" id="addForm">
         <label for="addTarefa">Adicionar nova tarefa</label>
         <input type="text" id="addTarefa" placeholder="Adicione sua tarefa" />
-        <button id="add-btn">+</button>
+        <button type="submit" id="add-btn">
+          <i class="fa-thin fa-plus"></i>
+        </button>
       </form>
 
-      <form action="" id="editForm">
+      <form action="" id="editForm" class="ativo">
         <label for="editTarefa">Editar tarefa</label>
         <input type="text" id="editTarefa" placeholder="Edite sua tarefa" />
-        <button id="edit-btn">-</button>
+        <button type="submit" id="edit-btn">
+          <i class="fa-solid fa-check-double"></i>
+        </button>
       </form>
 
       <div class="ferramentas">
@@ -36,7 +47,9 @@
             id="searchTarefa"
             placeholder="Pesquisa a tarefa"
           />
-          <button id="limpaPesquisa">*</button>
+          <button id="limpaPesquisa">
+            <i class="fa-solid fa-delete-left"></i>
+          </button>
         </form>
         <div>
           <label for="filtroTarefa">Filtrar:</label>
@@ -51,10 +64,22 @@
       <div class="listaTarefas">
         <div class="tarefa">
           <h4 class="tarefaTexto">Limpar o quarto</h4>
-          <div>
-            <button class="check-btn">v</button>
-            <button class="edit2-btn">/</button>
-            <button class="delete-btn">x</button>
+          <div class="acoes">
+            <button class="check-btn"><i class="fa-solid fa-check"></i></button>
+            <button class="edit2-btn"><i class="fa-solid fa-pen"></i></button>
+            <button class="delete-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+        <div class="tarefa">
+          <h4 class="tarefaTexto">Limpar o quarto</h4>
+          <div class="acoes">
+            <button class="check-btn"><i class="fa-solid fa-check"></i></button>
+            <button class="edit2-btn"><i class="fa-solid fa-pen"></i></button>
+            <button class="delete-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
           </div>
         </div>
       </div>
