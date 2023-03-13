@@ -7,5 +7,48 @@
     <link rel="stylesheet" href="./style.css" />
     <title>To-Do List</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>To-Do List</h1>
+      <form action="" id="addForm">
+        <label for="addTarefa">Adicionar nova tarefa</label>
+        <input type="text" id="addTarefa" placeholder="Adicione sua tarefa" />
+        <button id="add-btn">+</button>
+      </form>
+
+      <form action="" id="editForm">
+        <label for="editTarefa">Editar tarefa</label>
+        <input type="text" id="editTarefa" placeholder="Edite sua tarefa" />
+        <button id="edit-btn">-</button>
+      </form>
+
+      <div class="ferramentas">
+        <form action="" id="searchForm">
+          <label for="searchTarefa">Pesquisar</label>
+          <input
+            type="text"
+            id="searchTarefa"
+            placeholder="Pesquisa a tarefa"
+          />
+          <button id="limpaPesquisa">*</button>
+        </form>
+
+        <label for="filtroTarefa">Filtrar:</label>
+        <select name="filtroTarefa" id="filtroTarefa">
+          <option value="todos">Todas</option>
+          <option value="concluidas">Concluídas</option>
+          <option value="pendentes">Pendentes</option>
+        </select>
+      </div>
+
+      <div class="listaTarefas">
+        <div class="tarefa">
+          <h4 class="tarefaTexto">Limpar o quarto</h4>
+          <button class="check-btn">v</button>
+          <button class="edit2-btn">/</button>
+          <button class="delete-btn">x</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
